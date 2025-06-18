@@ -1,0 +1,296 @@
+/* Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background-color: #3F3274;
+    color: white;
+    padding: 20px;
+    background: linear-gradient(to bottom, #2c1a4f, #000);
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+    color: #b0a9c3;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    font-weight: bold;
+    color: yellow;
+}
+
+main {
+    flex-grow: 1;
+    margin-left: 250px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+/* Sections */
+section {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color : #9c27b0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ce93d8;
+    margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 1rem;
+  color : #e0e0e0,
+}
+
+#Acc {
+    padding-top: 50px;
+    font-size: 2rem;
+    background: linear-gradient(to bottom, black, #3F3274);
+    text-align: left;
+}
+
+
+
+#Moi, #parcours, #bts, #stages, #competences, #projets, #contact, #Veille {
+    background: linear-gradient(to bottom, #3F3274, black);
+    padding: 30px;
+}
+
+.elancoeur-link {
+    color: #d4a5ff; 
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.elancoeur-link:hover {
+    color: #ffb3ff; 
+}
+
+#stages ul {
+    margin: 15px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.stage-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.stage-card {
+    background: #220022;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #d4a5ff;
+    flex: 1 1 300px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.stage-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #220022;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    border: 2px solid #d4a5ff;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+.card h3 {
+    color: #d4a5ff;
+    text-align: center;
+
+}
+
+.card .btn {
+    display: block;
+    margin: 10px auto 0 auto;
+    text-align: center;
+}
+.card .icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+.btn {
+    display: inline-block;
+    background: #6a0dad;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #ff4081;
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+form button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #ff4081;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    main {
+        margin-left: 200px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .screenshot-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.screenshot {
+    background-color: #1e1e2f;
+    border: 2px solid #d4a5ff;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.screenshot img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+.screenshot p {
+    margin-top: 10px;
+    color: #d4a5ff;
+    font-size: 0.9rem;
+}
+
+}
+
+.btn-retour {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #444; /* Tu peux changer selon ta palette */
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.btn-retour:hover {
+  background-color: #222;
+}
