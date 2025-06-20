@@ -235,9 +235,20 @@ form button:hover {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
         width: 200px;
+        height: 100%;
+        background-color: #1e1e2f;
+        transition: left 0.3s ease-in-out;
+        z-index: 1000;
     }
 
+    .sidebar.active {
+        left: 0;
+    }
+    
     main {
         margin-left: 200px;
     }
@@ -276,7 +287,16 @@ form button:hover {
 }
 
 }
-
+.menu-toggle {
+    display: none;
+    background-color: #3F3274;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+}
 .btn-retour {
   position: fixed;
   bottom: 20px;
