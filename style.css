@@ -15,6 +15,10 @@ body {
 .sidebar {
     position: fixed;
     width: 250px;
+    top: 0;
+    left: 0;
+    transition: left 0.3s ease;
+    z-index: 1000
     height: 100vh;
     background-color: #3F3274;
     color: white;
@@ -250,43 +254,59 @@ form button:hover {
     }
     
     main {
-        margin-left: 200px;
+        margin: 0;
+        padding: 20px;
     }
 
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1100;
+        background: #d4a5ff;
+        color: #FFFF;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
     .card-container {
         grid-template-columns: 1fr;
     }
 
     .screenshot-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
-}
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+    }
 
-.screenshot {
-    background-color: #1e1e2f;
-    border: 2px solid #d4a5ff;
-    padding: 10px;
-    border-radius: 10px;
-    max-width: 300px;
-    text-align: center;
-}
+    .screenshot {
+        background-color: #1e1e2f;
+        border: 2px solid #d4a5ff;
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 300px;
+        text-align: center;
+    }
 
-.screenshot img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
-}
+    .screenshot img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+    }
 
-.screenshot p {
-    margin-top: 10px;
-    color: #d4a5ff;
-    font-size: 0.9rem;
-}
+    .screenshot p {
+        margin-top: 10px;
+        color: #d4a5ff;
+        font-size: 0.9rem;
+    }
 
 }
+    
 .menu-toggle {
     display: none;
     background-color: #3F3274;
@@ -294,9 +314,9 @@ form button:hover {
     padding: 10px;
     cursor: pointer;
     font-size: 20px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;  
 }
+    
 .btn-retour {
   position: fixed;
   bottom: 20px;
