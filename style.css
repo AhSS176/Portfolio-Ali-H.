@@ -102,7 +102,6 @@ p {
 }
 
 
-
 #Moi, #parcours, #bts, #stages, #competences, #projets, #contact, #Veille, #Fiche {
     background: linear-gradient(to bottom, #3F3274, black);
     padding: 30px;
@@ -148,6 +147,11 @@ p {
     margin-top: 10px;
 }
 
+#Fiche {
+  font-size: 1rem; 
+  padding: 1.5rem;
+}
+    
 /* Cards */
 .card-container {
     display: grid;
@@ -280,6 +284,23 @@ form button:hover {
         flex-direction: column;
         align-items: center;
     }
+ #Fiche {
+    padding: 20px;
+    font-size: 0.9rem;
+    overflow-wrap: break-word;
+  }
+
+  #Fiche img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #Fiche table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+    
 }
 
 .menu-toggle {
