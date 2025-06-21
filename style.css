@@ -91,7 +91,7 @@ h2 {
 
 p {
   margin-bottom: 1rem;
-  color : #e0e0e0,
+  color : #e0e0e0;
 }
 
 #Acc {
@@ -150,8 +150,7 @@ p {
 #Fiche {
   width:"1000px"; 
   height:"1000px";
-  border: 2px;
-  solid:  #ce93d8; 
+  border: 2px solid:  #ce93d8; 
   border-radius: 10px;
 }
     
@@ -304,16 +303,6 @@ form button:hover {
     display: block;
   }
     
-}
-
-.menu-toggle {
-    display: none;
-    background-color: #3F3274;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    margin-bottom: 20px;
 }
 
 .btn-retour {
