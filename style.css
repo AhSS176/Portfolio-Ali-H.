@@ -18,7 +18,7 @@ body {
     top: 0;
     left: 0;
     transition: left 0.3s ease;
-    z-index: 1000
+    z-index: 1000;
     height: 100vh;
     background-color: #3F3274;
     color: white;
@@ -103,7 +103,7 @@ p {
 
 
 
-#Moi, #parcours, #bts, #stages, #competences, #projets, #contact, #Veille, #Fiche{
+#Moi, #parcours, #bts, #stages, #competences, #projets, #contact, #Veille {
     background: linear-gradient(to bottom, #3F3274, black);
     padding: 30px;
 }
@@ -252,11 +252,6 @@ form button:hover {
     .sidebar.active {
         left: 0;
     }
-    
-    main {
-        margin: 0;
-        padding: 20px;
-    }
 
     .menu-toggle {
         display: block;
@@ -271,42 +266,22 @@ form button:hover {
         font-weight: bold;
         cursor: pointer;
     }
-    
+
+    main {
+        margin: 0;
+        padding: 20px;
+    }
+
     .card-container {
         grid-template-columns: 1fr;
     }
 
     .screenshot-gallery {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
     }
-
-    .screenshot {
-        background-color: #1e1e2f;
-        border: 2px solid #d4a5ff;
-        padding: 10px;
-        border-radius: 10px;
-        max-width: 300px;
-        text-align: center;
-    }
-
-    .screenshot img {
-        width: 100%;
-        height: auto;
-        border-radius: 5px;
-        box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
-    }
-
-    .screenshot p {
-        margin-top: 10px;
-        color: #d4a5ff;
-        font-size: 0.9rem;
-    }
-
 }
-    
+
 .menu-toggle {
     display: none;
     background-color: #3F3274;
@@ -314,9 +289,9 @@ form button:hover {
     padding: 10px;
     cursor: pointer;
     font-size: 20px;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
 }
-    
+
 .btn-retour {
   position: fixed;
   bottom: 20px;
