@@ -148,10 +148,15 @@ p {
 }
 
 #Fiche {
-  width:"1000px"; 
-  height:"1000px";
-  border: 2px solid:  #ce93d8; 
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+  border: 2px solid #ce93d8;
   border-radius: 10px;
+  background-color: #1a1a1a; /* ou la couleur de ton thème */
+  box-shadow: 0 0 10px rgba(206, 147, 216, 0.5);
+  overflow-x: auto;
 }
     
 /* Cards */
@@ -288,8 +293,10 @@ form button:hover {
     }
  #Fiche {
     padding: 20px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     overflow-wrap: break-word;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   #Fiche img {
