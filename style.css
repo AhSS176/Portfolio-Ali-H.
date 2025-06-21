@@ -158,6 +158,13 @@ p {
   box-shadow: 0 0 10px rgba(206, 147, 216, 0.5);
   overflow-x: auto;
 }
+
+#Fiche img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
     
 /* Cards */
 .card-container {
