@@ -15,8 +15,7 @@ body {
 
 .sidebar {
     position: fixed;
-    width: 250px;
-    width: calc(100% - 250px);
+    width: 300px;
     top: 0;
     left: 0;
     transition: left 0.3s ease;
