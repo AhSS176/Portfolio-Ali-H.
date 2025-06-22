@@ -272,7 +272,10 @@ form button:hover {
     .sidebar.active {
         left: 0;
     }
-
+    .sidebar h1{
+        padding-top: 20px;
+    }
+    
     .menu-toggle {
         display: block;
         position: fixed;
